@@ -3,6 +3,11 @@
   src: url("fonts/Caveat/Caveat-VariableFont_wght.ttf");
 }
 
+@font-face {
+  font-family: "IndieFlower";
+  src: url("fonts/Indie_Flower/IndieFlower-Regular.ttf");
+}
+
 body {
   background-color: black;
   display: cover;
@@ -35,23 +40,24 @@ main {
 .logo-container {
   display: flex;
   background-color: rgb(0, 0, 0, 0.8);
-  margin-top: 15vmin;
+  margin-top: 20vmin;
   justify-content: center;
+  padding: 0.6vmin;
 }
 
 .logo-container img {
-  width: 17%;
+  width: 20%;
   opacity: 0.6;
 }
 
 h1 {
   font-family: "Caveat";
-  font-size: 6vmin;
-  margin: 0.75vmin;
+  font-size: 7.5vmin;
+  margin: 0.75vmin 0;
 }
 
 .left-container p {
-  font-size: 2vmin;
+  font-size: 1.5vmin;
   text-align: center;
 }
 
@@ -63,3 +69,110 @@ h1 {
   color: white;
   text-shadow: 0.07vmin 0.07vmin rgba(255, 255, 255, 0.493);
 }
+
+.right-container {
+  background-color: rgb(255, 252, 237);
+  width: 63%;
+  padding-top: 10%;
+}
+
+.right-container p, .input-field-container {
+  padding-right: 4vmin;
+  padding-left: 4vmin;
+}
+
+.invite {
+  font-family: "IndieFlower";
+  font-size: 2.5vmin;
+  line-height: 3vmin;
+  margin-top: 0;
+  margin-bottom: 3%;
+}
+
+.input-field-container div {
+  display: inline-block;
+  width: 49%;
+}
+
+label, input {
+  display: block;
+  margin-top: 0.5%;
+}
+
+input {
+  margin-bottom: 4%;
+  font-size: 1.4vmin;
+  border: 1px solid rgb(214, 214, 214);
+  border-radius: 3px;
+  padding: 1%;
+  width: 60%;
+}
+
+
+input:focus {
+  border: 1px solid rgba(54, 106, 238, 0.848);
+  outline: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.153);
+}
+
+input:invalid {
+  border: 1px solid rgb(200, 4, 4);
+}
+
+label {
+  font-size: 1.1vmin;
+}
+
+.input-field-container {
+  background-color: white;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.15);
+  padding-bottom: 4%;
+}
+
+h2 {
+  margin: 0;
+  padding-top: 2vmin;
+  padding-bottom: 1.5vmin;
+  font-size: 2.1vmin;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.5vmin;
+}
+
+button {
+  background-color: rgb(240, 198, 91);
+  border: none;
+  margin-left: 4vmin;
+  margin-top: 3vmin;
+  margin-bottom: 2vmin;
+  padding: 2vmin 4vmin;
+  border-radius: 7px;
+  font-size: 1.5vmin;
+  font-weight: 600;
+  color: white;
+  text-shadow: 1px 1px 5px  rgba(0, 0, 0, 0.186);
+}
+
+button:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.334);
+  cursor: pointer;
+}
+
+button:active {
+  background-color: rgb(237, 184, 49);
+}
+
+.login {
+  color: rgb(240, 198, 91);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login:hover {
+  text-shadow: 0.07vmin 0.07vmin rgb(237, 184, 49);
+}
+
+
+
